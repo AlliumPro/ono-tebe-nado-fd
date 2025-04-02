@@ -5,13 +5,14 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   height: 293px;
+  padding: 90px 50px 96px;
   font-family: Raleway;
   font-weight: 400;
   font-size: 18px;
   line-height: 24.3px;
   letter-spacing: 0%;
-  padding: 90px 50px 96px;
 }
+
 .header__menu {
   /* TODO: Решить зачем эта херня нужна */
 }
@@ -62,11 +63,11 @@
 
 /* ADRESS STYLES */
 .address {
-  font-style: normal;
   width: 240px;
   font-family: Raleway;
 font-weight: 400;
 font-size: 18px;
+  font-style: normal;
 
 
 }
@@ -80,19 +81,19 @@ font-size: 18px;
 
 /* COVER STYLES */
 .cover {
-  /* background-color: greenyellow; */
-  background-image: url("../images/cover.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 757px;
-  background-position: center;
-  width: 100%;
-  color: white;
+  position: relative;
+  z-index: -1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
-  z-index: -1;
+  width: 100%;
+  height: 757px;
+  color: white;
+  /* background-color: greenyellow; */
+  background-image: url("../images/cover.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .cover__title {
   padding: 165px 50px 106px;
@@ -122,11 +123,11 @@ font-size: 18px;
   letter-spacing: 0;
 }
 .cover__description {
-  padding: 0 50px 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 0 50px 50px;
 }
 .cover__description-text {
   font-family: Raleway;
@@ -137,6 +138,9 @@ font-size: 18px;
   word-spacing: 18.5px;
 }
 .bet-button {
+border: 1px solid white;
+padding: 12px 32px 11px 31px;
+color: white;
 font-family: Raleway;
 font-weight: 500;
 font-size: 22px;
@@ -145,18 +149,14 @@ letter-spacing: 0%;
 text-align: center;
 text-transform: uppercase;
 background-color: transparent;
-color: white;
-border: 1px solid white;
-padding: 12px 32px 11px 31px;
-
 }
 .overlay {
   position: absolute;
+  z-index: -1;
   width: 100%;
   height: 100%;
-  background-color: black;
   opacity: 0.6;
-  z-index: -1;
+  background-color: black;
 }
 
 /* LOTS STYLES */
